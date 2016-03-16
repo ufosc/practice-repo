@@ -111,6 +111,20 @@ Update again!
 git push origin/master
 ```
 
+### Switching Branches
+
+Check for any updates
+
+```
+git fetch
+```
+
+**git checkout** - This switches the branch your working on to a different one. Usually it will be to a development branch or a bug fix branch.
+
+```
+git checkout dev
+```
+
 ### Workflow
 
 Usually there are several branches on the main repository.
@@ -120,3 +134,9 @@ Master, which is usually a stable version of the software, Normally you don't di
 Development or dev branch is where most development occurs. New features and bug fixes often are added here.
 
 Other branches are made as necessary for a variety of reasons. Often if a feature is big enough or something is experimental, it will get it's own branch.
+
+### TODO
+
+- Section on handling conflicts
+- Section on creating issues
+- Section on fixing issues 
