@@ -1,4 +1,4 @@
-# Test-Repository
+# Git-Intro
 
 This repository is meant to let people learn how git and GitHub work, without messing with a project. Feel free to change files (aside from this README) and upload new ones.
 
@@ -157,9 +157,13 @@ Usually there are several branches on the main repository.
 
 Master, which is usually a stable version of the software, Normally you don't directly update this.
 
-Development or dev branch is where most development occurs. New features and bug fixes often are added here.
+Development or dev branch is where you pull and push most the development. You typically don't edit code directly here. 
 
-Other branches are made as necessary for a variety of reasons. Often if a feature is big enough or something is experimental, it will get it's own branch.
+Other branches are made for a variety of reasons. For example, if there is a feature being worked on, create a new branch from development. Once that feature is working, push it back into the devleopment branch.
+
+Name the new branch in a way that is short and descriptive, such as Contact-Database. 
+
+Once a feature branch is working, make a pull request to the development branch. Administrators will check it, and confirm the merge. When the development branch is stable enough, it will be mergred into the master branch. 
 
 ### TODO
 
