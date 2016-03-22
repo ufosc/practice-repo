@@ -24,6 +24,10 @@ This repository is meant to let people learn how git and GitHub work, without me
 
 **GitHub** - A web based Git repository hosting service. It's where we will be hosting our projects.
 
+**Commit** - A commit is an update to the code. It can do things like add files or modify sections of code. 
+
+**Issues** - A bug or feature request you want to let the team know about. 
+
 ### What you need
 
 Install Git here https://www.git-scm.com/downloads
@@ -125,6 +129,28 @@ git fetch
 git checkout dev
 ```
 
+### Creating Issues 
+
+On the GitHub page for the repository clcik on the issues tab. Then clcik the green `New Issue` button. 
+
+Give an appropriate title and detailed description so people can recreate the issue. 
+
+Click Submit New Issue when you're done. A number will be assigned to the issue. 
+
+### Closing Issues 
+
+In a commit message to that branch include:
+
+```
+Fix #X
+```
+
+or 
+
+```
+Close #X
+```
+
 ### Workflow
 
 Usually there are several branches on the main repository.
@@ -138,5 +164,4 @@ Other branches are made as necessary for a variety of reasons. Often if a featur
 ### TODO
 
 - Section on handling conflicts
-- Section on creating issues
-- Section on fixing issues 
+
