@@ -46,6 +46,18 @@ git config --global user.name "Your Name Here"
 git config --global user.email "your_email@youremail.com"
 ```
 
+To specify your default editor, run the following command, replacing `$editorpath`:
+
+```
+git config --global core.editor "$editorpath"
+```
+
+_Hint: On *nix systems, run `which $faveditor` (where `$faveditor` is your editor of choice) and use that path for `$editorpath`._  
+_The following are some examples:_
+
+* nano: `git config --global core.editor "nano"`
+* gedit: `git config --global core.editor "gedit -w -s"`
+
 ### Create local repository
 
 Navigate to where you want the projects to be on your computer.
