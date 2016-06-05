@@ -1,4 +1,4 @@
-# Test-Repository
+# Git-Intro
 
 This repository is meant to let people learn how git and GitHub work, without messing with a project. Feel free to change files (aside from this README) and upload new ones.
 
@@ -24,6 +24,10 @@ This repository is meant to let people learn how git and GitHub work, without me
 
 **GitHub** - A web based Git repository hosting service. It's where we will be hosting our projects.
 
+**Commit** - A commit is an update to the code. It can do things like add files or modify sections of code.
+
+**Issues** - A bug or feature request you want to let the team know about.
+
 ### What you need
 
 Install Git here https://www.git-scm.com/downloads
@@ -41,6 +45,18 @@ git config --global user.name "Your Name Here"
 
 git config --global user.email "your_email@youremail.com"
 ```
+
+To specify your default editor, run the following command, replacing `$editorpath`:
+
+```
+git config --global core.editor "$editorpath"
+```
+
+_Hint: On *nix systems, run `which $faveditor` (where `$faveditor` is your editor of choice) and use that path for `$editorpath`._  
+_The following are some examples:_
+
+* nano: `git config --global core.editor "nano"`
+* gedit: `git config --global core.editor "gedit -w -s"`
 
 ### Create local repository
 
@@ -70,7 +86,7 @@ Copy the url from the repository you want on your computer.
 **git clone** - This will create a copy of the designated repository on your computer.
 
 ```
-git clone https://github.com/UFOSC/Test-Repository.git
+git clone https://github.com/UFOSC/Git-Intro.git
 ```
 
 ### Updating
@@ -125,18 +141,42 @@ git fetch
 git checkout dev
 ```
 
+### Creating Issues
+
+On the GitHub page for the repository clcik on the issues tab. Then clcik the green `New Issue` button.
+
+Give an appropriate title and detailed description so people can recreate the issue.
+
+Click Submit New Issue when you're done. A number will be assigned to the issue.
+
+### Closing Issues
+
+In a commit message to that branch include:
+
+```
+Fix #X
+```
+
+or
+
+```
+Close #X
+```
+
 ### Workflow
 
 Usually there are several branches on the main repository.
 
 Master, which is usually a stable version of the software, Normally you don't directly update this.
 
-Development or dev branch is where most development occurs. New features and bug fixes often are added here.
+Development or dev branch is where you pull and push most the development. You typically don't edit code directly here.
 
-Other branches are made as necessary for a variety of reasons. Often if a feature is big enough or something is experimental, it will get it's own branch.
+Other branches are made for a variety of reasons. For example, if there is a feature being worked on, create a new branch from development. Once that feature is working, push it back into the devleopment branch.
+
+Name the new branch in a way that is short and descriptive, such as Contact-Database.
+
+Once a feature branch is working, make a pull request to the development branch. Administrators will check it, and confirm the merge. When the development branch is stable enough, it will be mergred into the master branch.
 
 ### TODO
 
 - Section on handling conflicts
-- Section on creating issues
-- Section on fixing issues 
