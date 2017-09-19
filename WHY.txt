@@ -1,1 +1,5 @@
 Why are there so many files in here
+## Answer:
+```
+touch {a..z}{A..Z}{1..100}
+```
