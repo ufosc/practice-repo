@@ -1,4 +1,0 @@
-All these files were made with one command:
-  "touch {a..z}{A..Z}{1..100}"
-
-If you have bash, try it yourself!
